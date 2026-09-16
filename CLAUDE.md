@@ -6,7 +6,7 @@ content, styling, and fonts all live there.
 ## Workflow
 
 After any change to `resume.html`, run `./make-pdf.sh` to regenerate
-`Iulius_Uriesu_Resume.pdf`, and commit the two together. Always push
+`David_Uriesu_Resume.pdf`, and commit the two together. Always push
 straight after committing — don't wait to be asked. The repo is private.
 
 ## Rules

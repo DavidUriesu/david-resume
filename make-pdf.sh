@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Render resume.html to Iulius_Uriesu_Resume.pdf using the locally installed Google Chrome.
+# Render resume.html to David_Uriesu_Resume.pdf using the locally installed Google Chrome.
 #
 # Chrome is the same engine that renders the HTML in the browser, so the PDF
 # matches what you see in Chrome's print preview. Paper size and margins are
@@ -10,7 +10,7 @@ cd "$(dirname "$0")"
 
 CHROME="${CHROME:-/Applications/Google Chrome.app/Contents/MacOS/Google Chrome}"
 IN="resume.html"
-OUT="Iulius_Uriesu_Resume.pdf"
+OUT="David_Uriesu_Resume.pdf"
 
 if [[ ! -x "$CHROME" ]]; then
   echo "Chrome not found at: $CHROME" >&2
