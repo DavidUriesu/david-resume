@@ -329,44 +329,55 @@
     </header>
 
     <section>
-      <div class="section-title"><h2>Experience</h2><div class="rule"></div></div>
+      <div class="section-title"><h2>Education</h2><div class="rule"></div></div>
+      <div class="entry">
+        <div class="entry-row">
+          <span class="role">Bachelor in Computer Science</span>
+        </div>
+        <ul class="bullets">
+          <li><span class="emphasis">Babeș-Bolyai University</span> of Cluj-Napoca, Romania</li>
+          <li><span class="emphasis">Oct 2025 – Present</span> | Expected Graduation Jul 2028</li>
+          <li><span class="emphasis">Relevant Courses</span>: Data Structures and Algorithms | Object-Oriented Programming | Operating Systems | Computer System Architecture</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title"><h2>Projects</h2><div class="rule"></div></div>
 
       <div class="entry">
         <div class="entry-row">
-          <span class="role">Software Engineer in Developer Experience</span>
-          <span class="org">Databricks</span>
-          <span class="meta"><span class="location">Amsterdam, Netherlands</span><span class="dot">&middot;</span><span class="dates">Sep 2025 – Present</span></span>
+          <span class="role">Document Copilot</span>
+          <span class="org">React | FastAPI | Supabase | OpenAI</span>
         </div>
         <ul class="bullets">
-          <li>Decreased the number of <span class="emphasis">engineers blocked every day</span> due to development environment startup failures by <span class="emphasis">4x</span>, across all ~3,000 engineers at the company. Built the missing instrumentation from scratch on Databricks itself, then worked through the most common failures, fixing both the client side in Scala and the remote setup in Go.</li>
-          <li>Reduced how long engineers wait for improvements to Databricks' internal development environment system, from <span class="emphasis">5 days to 2.5</span>, and increased release frequency from twice a week to daily, with <span class="emphasis">no increase in rollbacks or incidents</span>. Redesigned a single Spinnaker pipeline into two: one that bakes and tests machine images every 4 hours, and one that ships the last known good build to all users daily.</li>
-          <li>Lowered read traffic to GitHub from <span class="emphasis">~80 GB/hour to ~0.1 GB/hour</span> by moving 30 CI workloads onto an internal Git caching layer. This was part of a broader migration that brought down P90 git push latency from 60 to 30 seconds across all Databricks engineers.</li>
-          <li><span class="emphasis">Owned observability</span> for the internal Git caching layer serving ~3M requests per day across multiple repositories, including Databricks' biggest monorepo (over 1 million files). Defined the service's SLOs and built multi-window, multi-burn-rate alerting on Prometheus and Grafana, along with the dashboards and runbook the team uses for on-call.</li>
-          <li>Cut the time to detect and escalate GitHub-side incidents from ~2 hours to under 10 minutes, often <span class="emphasis">before GitHub flagged them to us</span>, by building monitoring that tells on-call whether the failure is in our service or at GitHub. Detection previously relied on engineers reporting slow Git operations.</li>
+          <li>Developed a full-stack AI research assistant that enables financial analysts to query SEC filings in natural language and receive streamed answers grounded in cited source passages.</li>
+          <li>Implemented hybrid document retrieval by combining semantic search with <span class="emphasis">pgvector</span> and PostgreSQL full-text search, using FastAPI, Supabase, and OpenAI to generate and validate evidence-based responses.</li>
+          <li>Built a React and TypeScript chat interface with user authentication, conversation history, document citations, and source previews, and deployed the application using Railway and Supabase.</li>
         </ul>
       </div>
 
       <div class="entry">
         <div class="entry-row">
-          <span class="role">Software Development Engineer Intern</span>
-          <span class="org">Amazon</span>
-          <span class="meta"><span class="location">Iași, Romania</span><span class="dot">&middot;</span><span class="dates">Jul 2024 – Oct 2024</span></span>
+          <span class="role">ParcelFlow</span>
+          <span class="org">C++17 | Qt 6 | SQLite</span>
         </div>
         <ul class="bullets">
-          <li>Made it faster and easier for data engineering teams in Amazon's compliance department to find metadata about jobs, tables, and dashboards, by replacing a set of older, scattered internal tools with a single web application. <span class="emphasis">Talked to the users myself</span> to understand their workflows before deciding what to build.</li>
-          <li>Built and deployed the full serverless web application <span class="emphasis">to production</span> on AWS, using CloudFront, API Gateway, Lambda, and DynamoDB, with infrastructure as code in CloudFormation.</li>
+          <li>Developed a desktop parcel-delivery management application with parcel tracking, persistent customer and delivery data, status history, input validation, and multiple synchronized GUI views.</li>
+          <li>Implemented automatic agent assignment based on street coverage, delivery radius, and nearest-agent selection, supported by database transactions and <span class="emphasis">eight automated integration tests</span>.</li>
+          <li><span class="emphasis">GitHub:</span> <a href="https://github.com/DavidUriesu/Parcel-Flow">github.com/DavidUriesu/Parcel-Flow</a></li>
         </ul>
       </div>
 
       <div class="entry">
         <div class="entry-row">
-          <span class="role">Computer Science Tutor</span>
-          <span class="org">Private Tutoring</span>
-          <span class="meta"><span class="location">Romania</span><span class="dot">&middot;</span><span class="dates">Mar 2023 – Jul 2025</span></span>
+          <span class="role">Pygame Snake</span>
+          <span class="org">Python | Pygame | unittest</span>
         </div>
         <ul class="bullets">
-          <li>Took a student from failing to qualify for the Romanian National Computer Science Olympiad to winning a <span class="emphasis">bronze medal</span> there the next year.</li>
-          <li>Taught computer science one-on-one to <span class="emphasis">12 students</span>, covering competitive programming and university admission preparation (<a href="https://www.trustpilot.com/review/iuliusuriesu.com?languages=all">Trustpilot reviews</a>).</li>
+          <li>Built a configurable Snake game featuring dynamic board and apple settings, progressive difficulty, keyboard controls, and pause, restart, game-over, and victory states.</li>
+          <li>Separated the application into domain, game-service, and UI layers, with <span class="emphasis">15 automated tests</span> covering movement, growth, collision detection, apple placement, validation, and speed progression.</li>
+          <li><span class="emphasis">GitHub:</span> <a href="https://github.com/DavidUriesu/Pygame-Snake">github.com/DavidUriesu/Pygame-Snake</a></li>
         </ul>
       </div>
     </section>
@@ -379,20 +390,6 @@
         <li>Git | GitHub Actions | Spinnaker | Prometheus | Grafana | Protobuf | PostgreSQL | DynamoDB | S3</li>
         <li>Distributed Systems | Microservices | Backend | DevOps | CI/CD | gRPC | REST | SRE | Observability | SLOs</li>
       </ul>
-    </section>
-
-    <section>
-      <div class="section-title"><h2>Education</h2><div class="rule"></div></div>
-      <div class="entry">
-        <div class="entry-row">
-          <span class="role">Bachelor in Computer Science</span>
-        </div>
-        <ul class="bullets">
-          <li><span class="emphasis">Babeș-Bolyai University</span> of Cluj-Napoca, Romania</li>
-          <li><span class="emphasis">Oct 2025 – Present</span> | Expected Graduation Jul 2028</li>
-          <li><span class="emphasis">Relevant Courses</span>: Data Structures and Algorithms | Object-Oriented Programming | Operating Systems | Computer System Architecture</li>
-        </ul>
-      </div>
     </section>
 
     <section>
